@@ -1,39 +1,19 @@
 programa {
+  funcao inicio() { 
 
-  // biblioteca para arredondamento 
-  inclua biblioteca Matematica --> mat
+     // declaração do betor para 5 nomes e variavel de controle
+     cadeia nomes[5]
 
-  funcao inicio () {
+     // captura o nome dos 5 alunos 
+     para( inteiro i = 0; i < 5; i++ ) { // faça
+       escreva("Digite o nome: \n")
+       leia (nomes[i])
+     }
 
-    // declaração do vetor para 5 nomes e variável de control
-    cadeia nomes [5]
-    real notas [15]
+     escreva("\n--- Lista de alunos")
+     para( inteiro i = 0; i < 5; i++ ) {
+     escreva("aluno: ", nomes[i], "\n")
+     }
 
-    // captura os nomes dos 5 alunos
-    para( inteiro i = 0; i < 5; i ++ ) { // faça
-      escreva ("Aluno : ")
-      leia (nomes [i] )
-
-      para (inteiro j = 0; j < 3; j ++){
-        inteiro posicao = (i * 3) + j
-        escreva("Digite a nota: ")
-        leia (notas [ posicao])
-
-      }
-
-
-
-    }
-
-    escreva("\n---Lista de Alunos\n")
-
-    para( inteiro i = 0; i < 5; i++ ) { 
-      escreva("\n Aluno: ", nomes[i])
-
-    }
-
-
-
-    
   }
 }
